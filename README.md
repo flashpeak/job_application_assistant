@@ -11,7 +11,7 @@ FlashPeak Job Application Assistant is an AI-driven browser extension that strea
 - Resume parsing and management
 - Cover letter generation
 - Job assessment analysis
-- Support for job listing aggregation websites (linkedin, indeed, ziprecuiter, etc) as well as corporate career websites.
+- Support for job listing aggregation websites (linkedin, indeed, ziprecuiter, etc) as well as most corporate career websites.
 
 ## Installation
 
