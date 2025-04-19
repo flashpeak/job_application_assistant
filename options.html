@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Application Information &amp; Options</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        label.aligned { display: inline-block; width: 200px; margin-bottom: 10px; font-weight: bold; }
+        input[type="text"], input[type="email"], input[type="tel"], select { width: 250px; }
+        button { margin-top: 20px; }
+        h2 { margin-top: 30px; }
+    </style>
+    <!-- Add these lines in the <head> section -->
+    <script src="scripts/mammoth.browser.min.js"></script>
+    <script src="scripts/pdf.min.js"></script>
+    <script src="scripts/pdf.worker.min.js"></script>
+</head>
+<body>
+    <h1>Application Information &amp; Options</h1>
+    <h2>Find it useful? Support our development</h2>
+    <style>.pp-43NBSZFWAV3PW{text-align:center;border:none;border-radius:1.5rem;min-width:11.625rem;padding:0 2rem;height:2.625rem;font-weight:bold;background-color:#FFD140;color:#000000;font-family:"Helvetica Neue",Arial,sans-serif;font-size:1rem;line-height:1.25rem;cursor:pointer;}</style>
+    <form action="https://www.paypal.com/ncp/payment/43NBSZFWAV3PW" method="post" target="_top" style="display:inline-grid;justify-items:center;align-content:start;gap:0.5rem;">
+      <input class="pp-43NBSZFWAV3PW" type="submit" value="Donate" />
+      <img src=https://www.paypalobjects.com/images/Debit_Credit_APM.svg alt="cards" />
+      <section> Powered by <img src="https://www.paypalobjects.com/paypal-ui/logos/svg/paypal-wordmark-color.svg" alt="paypal" style="height:0.875rem;vertical-align:middle;"/></section>
+    </form>    
+    <h2>Personal Information</h2>
+    <div>
+        <label class="aligned" for="first_name">First Name*:</label>
+        <input type="text" id="first_name" name="first_name">
+    </div>
+    <div>
+        <label class="aligned" for="last_name">Last Name*:</label>
+        <input type="text" id="last_name" name="last_name">
+    </div>
+    <div>
+        <label class="aligned" for="email">Email*:</label>
+        <input type="email" id="email" name="email" placeholder="e.g., example@example.com">
+    </div>
+    <div>
+      <label class="aligned" for="phone">Phone*:</label>
+      <input type="tel" id="phone" name="phone" placeholder="e.g., +1 123 456-7890">
+    </div>    
+    <div>
+        <label class="aligned" for="gender">Gender:</label>
+        <select id="gender" name="gender">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Prefer not to answer">Prefer not to answer</option>
+        </select>
+    </div>
+    <div>
+        <label class="aligned" for="disabled">I am disabled:</label>
+        <select id="disabled" name="disabled">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+            <option value="Prefer not to answer">Prefer not to answer</option>
+        </select>
+    </div>
+    <div>
+        <label class="aligned" for="veteran">I am a veteran:</label>
+        <select id="veteran" name="veteran">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+            <option value="Prefer not to answer">Prefer not to answer</option>
+        </select>
+    </div>
+    <div>
+        <label class="aligned" for="sexual_orientation">Sexual orientation:</label>
+        <select id="sexual_orientation" name="sexual_orientation">
+            <option value="Straight">Straight</option>
+            <option value="Gay">Gay</option>
+            <option value="Bisexual">Bisexual</option>
+            <option value="Transgender">Transgender</option>
+            <option value="Queer">Queer</option>
+            <option value="Asexual">Asexual</option>
+            <option value="Pansexual">Pansexual</option>
+            <option value="Demisexual">Demisexual</option>
+            <option value="Prefer not to answer">Prefer not to answer</option>
+        </select>
+    </div>
+    <div>
+        <label class="aligned" for="race">Race:</label>
+        <select id="race" name="race">
+            <option value="White">White</option>
+            <option value="Black">Black</option>
+            <option value="East Asian">East Asian</option>
+            <option value="South Asian">South Asian</option>
+            <option value="Southeast Asian">Southeast Asian</option>
+            <option value="Hispanic">Hispanic</option>
+            <option value="Native American">Native American</option>
+            <option value="Other">Other</option>
+            <option value="Prefer not to answer">Prefer not to answer</option>
+        </select>
+    </div>
+    <div>
+        <label class="aligned" for="street_address">Street Address:</label>
+        <input type="text" id="street_address" name="street_address">
+    </div>
+    <div>
+        <label class="aligned" for="city">City:</label>
+        <input type="text" id="city" name="city">
+    </div>
+    <div>
+        <label class="aligned" for="state">State:</label>
+        <select id="state" name="state">
+            <option value="">Select a state</option>
+            <!-- States will be populated by JavaScript -->
+        </select>
+    </div>
+    <div>
+        <label class="aligned" for="zip_code">Zip Code:</label>
+        <input type="text" id="zip_code" name="zip_code" placeholder="e.g., 12345">
+    </div>
+    <div>
+        <label class="aligned" for="country">Country:</label>
+        <select id="country" name="country">
+            <option value="">Select a country</option>
+            <!-- Countries will be populated by JavaScript -->
+        </select>
+    </div>
+    <div>
+        <label class="aligned" for="linkedin_profile">LinkedIn Profile:</label>
+        <input type="text" id="linkedin_profile" name="linkedin_profile">
+    </div>
+    <div>
+        <label class="aligned" for="github_profile">GitHub Profile:</label>
+        <input type="text" id="github_profile" name="github_profile">
+    </div>
+
+    <h2>Work Authorization</h2>
+    <div>
+        <label class="aligned" for="us_sponsorship_required">US Sponsorship Required:</label>
+        <select id="us_sponsorship_required" name="us_sponsorship_required">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+    </div>
+    <div>
+        <label class="aligned" for="us_work_authorization">US Work Authorization:</label>
+        <select id="us_work_authorization" name="us_work_authorization">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+    </div>
+    <div>
+        <label class="aligned" for="us_work_authorization_type">US Work Authorization Type:</label>
+        <select id="us_work_authorization_type" name="us_work_authorization_type">
+            <option value="None">None</option>
+            <option value="OPT">OPT</option>
+            <option value="H1B">H1B</option>
+            <option value="J1">J1</option>
+            <option value="L1">L1</option>
+            <option value="O1">O1</option>
+            <option value="EAD">EAD</option>
+            <option value="Permanent Resident">Permanent Resident</option>
+            <option value="Citizen">US Citizen</option>
+        </select>
+    </div>
+    <h2>Job Preferences</h2>
+    <div>
+        <label class="aligned" for="current_job_title">Current Job Title:</label>
+        <input type="text" id="current_job_title" name="current_job_title">
+    </div>
+    <div>
+        <label class="aligned" for="job_title">Desired Job Titles(sep. with commas):</label>
+        <input type="text" id="job_title" name="job_title">
+    </div>
+    <div>
+        <label class="aligned" for="available_date">When can you start:</label>
+        <input type="text" id="available_date" name="available_date" placeholder="in 2 weeks">
+    </div>
+    <div>
+        <label class="aligned" for="expected_salary">Expected Salary:</label>
+        <input type="text" id="expected_salary" name="expected_salary">
+    </div>
+    <div>
+        <label class="aligned" for="drug_test">Willing to take a drug test:</label>
+        <select id="drug_test" name="drug_test">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+    </div>
+    <div>
+        <label class="aligned" for="willing_to_travel">Willing to travel:</label>
+        <select id="willing_to_travel" name="willing_to_travel">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+    </div>
+    <div>
+        <label class="aligned" for="willing_to_relocate">Willing to relocate:</label>
+        <select id="willing_to_relocate" name="willing_to_relocate">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+    </div>
+    <div>
+        <label class="aligned" for="security_check">Willing to undergo security check:</label>
+        <select id="security_check" name="security_check">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+    </div>
+    <h2>Resume</h2>
+    <div>
+        <p style="margin-bottom: 5px;">
+        <label for="resume" style="margin-right: 10px;"><strong>Resume:</strong></label>
+        <input type="file" id="resume" name="resume" accept=".txt">
+        </p>
+        <ul>
+            <li>Clearly indicate the years of experience in the key skills you want to highlight so that AI can answer relevant questions correctly.</li>
+            <li>Exclude your name, email, phone, address from the resume. Only provide your education, work experience, and skills.</li>
+            <li>Minimum 512 characters. Maximum 20000 characters.</li>
+        </ul>
+        <textarea id="resume_text" name="resume_text" rows="20" cols="100" maxlength="20000"></textarea>
+    </div>
+    <div>
+        <p style="margin-bottom: 5px;"><label for="custom_instructions"><strong>Custom Instructions(max 512 chars):</strong></label></p>
+        <p style="margin-top: 0px;">Include other information that is not included in your resume as well as custom instructions for the AI to handle specific situations.</p>
+
+        <textarea id="custom_instructions" name="custom_instructions" rows="10" cols="100" maxlength="512"></textarea>
+    </div>
+    <p style="display:none"><label><input type="checkbox" id="debug_mode" name="debug_mode">Debug Mode</label></p>
+    <p><button style="margin-right: 10px;" id="save">Save Data</button><button style="margin-right: 10px;" id="export">Export Data</button><button style="margin-right: 10px;" id="import">Import Data</button></p>
+    <p id="status_message"></p>
+    <p><a href="https://www.slimjet.com/job-application-assistant/privacy.php">Privacy Policy</a></p>
+
+    <script src="scripts/js-yaml.min.js"></script>
+    <script src="scripts/options_test.js"></script>
+    <script src="scripts/options.js"></script>
+</body>
+</html>

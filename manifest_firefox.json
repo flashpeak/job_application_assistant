@@ -1,0 +1,75 @@
+{
+  "manifest_version": 2,
+  "name": "FlashPeak Job Application Assistant",
+  "description": "Fill out job application forms with AI.",
+  "version": "1.0.2",
+  "permissions": ["activeTab", "storage", "contextMenus", "clipboardWrite", "<all_urls>"],
+  "background": {
+    "scripts": ["scripts/background.js"],
+    "type": "module",
+    "persistent": false
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "exclude_matches": ["https://*.icims.com/*","https://*.greenhouse.io/*","https://recruit.hr-on.com/*"],
+      "js": [
+        "scripts/utils.js",
+        "scripts/ai_busy_state_man.js",
+        "scripts/label_locator.js",
+        "scripts/field_extractor.js",
+        "scripts/local_field_parser.js",
+        "scripts/form_filler.js",
+        "scripts/job_description_extractor.js",
+        "scripts/cover_letter.js",
+        "scripts/job_assessment.js",
+        "scripts/fully_auto_fill_trigger.js",
+        "scripts/storage_man.js",
+        "scripts/content.js",
+        "scripts/test.js"
+      ],
+      "all_frames": false,
+      "type": "module"
+    },
+    {
+      "matches": ["https://*.icims.com/*","https://*.greenhouse.io/*","https://recruit.hr-on.com/*"],
+      "js": [
+        "scripts/utils.js",
+        "scripts/ai_busy_state_man.js",
+        "scripts/label_locator.js",
+        "scripts/field_extractor.js",
+        "scripts/local_field_parser.js",
+        "scripts/form_filler.js",
+        "scripts/job_description_extractor.js",
+        "scripts/cover_letter.js",
+        "scripts/job_assessment.js",
+        "scripts/fully_auto_fill_trigger.js",
+        "scripts/storage_man.js",
+        "scripts/content.js",
+        "scripts/test.js"
+      ],
+      "all_frames": true,
+      "type": "module"
+    }
+  ],
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": "icons/jaa_icon16.png"
+  },
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": true
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "job-application-assistant@flashpeak.com",
+      "strict_min_version": "58.0"
+    }
+  },
+  "icons": {
+    "16": "icons/jaa_icon16.png",
+    "32": "icons/jaa_icon32.png",
+    "48": "icons/jaa_icon48.png",
+    "128": "icons/jaa_icon128.png"
+  }
+}

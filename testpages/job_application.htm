@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Engineer Job Application</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"], input[type="email"], input[type="tel"], input[type="date"], select, textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #5cb85c;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #4cae4c;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Software Engineer Job Application</h1>
+        <h2>Job Description</h2>
+        <p>We are seeking a talented React Native Developer to join our team at Meta. In this role, you will be responsible for building and maintaining high-performance mobile applications using React Native. You will work closely with our product and design teams to create seamless cross-platform experiences that millions of people use every day.</p>
+
+        <h3>Key responsibilities:</h3>
+        <ul>
+            <li>Develop new features and maintain existing functionality in our React Native mobile applications</li>
+            <li>Collaborate with cross-functional teams to define, design, and ship new features</li>
+            <li>Ensure the performance, quality, and responsiveness of applications</li>
+            <li>Identify and correct bottlenecks and fix bugs</li>
+            <li>Help maintain code quality, organization, and automatization</li>
+        </ul>
+
+        <h3>Requirements:</h3>
+        <ul>
+            <li>3+ years of experience with React Native development</li>
+            <li>Strong understanding of React and React Native frameworks</li>
+            <li>Experience with iOS and Android development</li>
+            <li>Proficiency in JavaScript/TypeScript</li>
+            <li>Experience with mobile UI design principles and patterns</li>
+            <li>Bachelor's degree in Computer Science or related field</li>
+        </ul>
+
+        <h2>Application Form</h2>
+        <form id="job-application-form">
+            <div class="form-group">
+                <label for="full-name">FullName:</label>
+                <input type="text" id="full-name" name="full-name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">EmailAddress:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">PhoneNumber:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="address">StreetAddress:</label>
+                <textarea id="address" name="address" rows="3" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="city">City:</label>
+                <input type="text" id="city" name="city" required>
+            </div>
+            <div class="form-group">
+                <label for="state">State:</label>
+                <input type="text" id="state" name="state" required>
+            </div>
+            <div class="form-group">
+                <label for="education">Highest Level of Education:</label>
+                <select id="education" name="education" required>
+                    <option value="">Select one</option>
+                    <option value="high-school">High School</option>
+                    <option value="associate">Associate's Degree</option>
+                    <option value="bachelor">Bachelor's Degree</option>
+                    <option value="master">Master's Degree</option>
+                    <option value="phd">Ph.D.</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="experience">Years of Experience in Software Engineering:</label>
+                <input type="number" id="experience" name="experience" min="0" required>
+            </div>
+            <div class="form-group">
+                <label for="programming-languages">Programming Languages (comma-separated):</label>
+                <input type="text" id="programming-languages" name="programming-languages" required>
+            </div>
+            <div class="form-group">
+                <label for="frameworks">Frameworks and Libraries:</label>
+                <input type="text" id="frameworks" name="frameworks">
+            </div>
+            <div class="form-group">
+                <label for="database">Please list your database experience:</label>
+                <input type="text" id="database" name="database">
+            </div>
+            <div class="form-group">
+                <label for="version-control">Version Control Systems:</label>
+                <input type="text" id="version-control" name="version-control">
+            </div>
+            <div class="form-group">
+                <label for="project">Describe a significant project you've worked on:</label>
+                <textarea id="project" name="project" rows="5" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="salary">Expected Salary (USD):</label>
+                <input type="text" id="salary" name="salary" required>
+            </div>
+            <div class="form-group">
+                <label for="remote">Are you willing to work remotely?</label>
+                <select id="remote" name="remote" required>
+                    <option value="">Select one</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+            </div>
+            <div>
+                <label for="available_date">When can you start:</label>
+                <input type="date" id="available_date" name="available_date">
+            </div>
+            <div class="form-group">
+                <label>Race/Ethnicity:</label>
+                <div style="display:flex">
+                    <label for="race_white"><input type="radio" id="race_white" name="race" value="white">
+                    White</label>
+                </div>
+                <div style="display:flex">
+                    <label for="race_black"><input type="radio" id="race_black" name="race" value="black">
+                    Black or African American</label>
+                </div>
+                <div style="display:flex">
+                    <label for="race_asian"><input type="radio" id="race_asian" name="race" value="asian">
+                    Asian</label>
+                </div>
+                <div style="display:flex">
+                    <label for="race_hispanic"><input type="radio" id="race_hispanic" name="race" value="hispanic">
+                    Hispanic or Latino</label>
+                </div>
+                <div style="display:flex">
+                    <label for="race_native"><input type="radio" id="race_native" name="race" value="native">
+                    American Indian or Alaska Native</label>
+                </div>
+                <div style="display:flex">
+                    <label for="race_pacific"><input type="radio" id="race_pacific" name="race" value="pacific">
+                    Native Hawaiian or Other Pacific Islander</label>
+                </div>
+                <div style="display:flex">
+                    <label for="race_other"><input type="radio" id="race_other" name="race" value="other">
+                    Other</label>
+                </div>
+                <div style="display:flex">
+                    <label for="race_decline"><input type="radio" id="race_decline" name="race" value="decline">
+                    Prefer not to say</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Highest Degrees Earned:</label>
+                <div style="display:flex">
+                    <label for="degree_hs"><input type="checkbox" id="degree_hs" name="degrees" value="high_school">
+                    High School Diploma</label>
+                </div>
+                <div style="display:flex">
+                    <label for="degree_associate"><input type="checkbox" id="degree_associate" name="degrees" value="associate">
+                    Associate's Degree</label>
+                </div>
+                <div style="display:flex">
+                    <label for="degree_bachelor"><input type="checkbox" id="degree_bachelor" name="degrees" value="bachelor">
+                    Bachelor's Degree</label>
+                </div>
+                <div style="display:flex">
+                    <label for="degree_master"><input type="checkbox" id="degree_master" name="degrees" value="master">
+                    Master's Degree</label>
+                </div>
+                <div style="display:flex">
+                    <label for="degree_phd"><input type="checkbox" id="degree_phd" name="degrees" value="phd">
+                    Ph.D.</label>
+                </div>
+                <div style="display:flex">
+                    <label for="degree_other"><input type="checkbox" id="degree_other" name="degrees" value="other">
+                    Other</label>
+                </div>
+            </div>
+            <div class="form-group">
+              <label>All Degrees Earned:</label>
+              <div style="display:flex">
+                  <label for="degree_hs_1"><input type="checkbox" id="degree_hs_1" name="degrees" value="high_school">
+                  High School Diploma</label>
+              </div>
+              <div style="display:flex">
+                  <label for="degree_associate_1"><input type="checkbox" id="degree_associate_1" name="degrees" value="associate">
+                  Associate's Degree</label>
+              </div>
+              <div style="display:flex">
+                  <label for="degree_bachelor_1"><input type="checkbox" id="degree_bachelor_1" name="degrees" value="bachelor">
+                  Bachelor's Degree</label>
+              </div>
+              <div style="display:flex">
+                  <label for="degree_master_1"><input type="checkbox" id="degree_master_1" name="degrees" value="master">
+                  Master's Degree</label>
+              </div>
+              <div style="display:flex">
+                  <label for="degree_phd_1"><input type="checkbox" id="degree_phd_1" name="degrees" value="phd">
+                  Ph.D.</label>
+              </div>
+              <div style="display:flex">
+                  <label for="degree_other_1"><input type="checkbox" id="degree_other_1" name="degrees" value="other">
+                  Other</label>
+              </div>
+          </div>            
+            <div class="form-group">
+                <label for="relocation">Are you willing to relocate?</label>
+                <select id="relocation" name="relocation" required>
+                    <option value="">Select one</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="visa">Do you require visa sponsorship?</label>
+                <select id="visa" name="visa" required>
+                    <option value="">Select one</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="additional-info">Message to the recruiter:</label>
+                <textarea id="additional-info" name="additional-info" rows="5"></textarea>
+            </div>
+            <input type="submit" value="Submit Application">
+        </form>
+    </div>
+    <script>
+        document.getElementById('job-application-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Here you would typically send the form data to a server
+            alert('Thank you for your application! We will be in touch soon.');
+        });
+    </script>
+</body>
+</html>
