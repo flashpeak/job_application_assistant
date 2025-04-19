@@ -1,4 +1,4 @@
-# Job Application Assistant
+# FlashPeak Job Application Assistant
 
 FlashPeak Job Application Assistant is an AI-driven browser extension that streamlines and enhances your job application experience. It automatically fills in your personal information—like name, email, and phone number—and crafts thoughtful answers to experience-based and open-ended questions by analyzing your resume and the job description. It also generates personalized cover letters for each role and delivers an AI-powered report assessing how well your skills align with the position. 
 
