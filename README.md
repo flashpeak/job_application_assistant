@@ -6,12 +6,13 @@ FlashPeak Job Application Assistant is an AI-driven browser extension that strea
 
 ## Features
 
-- Auto-fill job application forms
-- AI-powered field filling for complex questions
-- Resume parsing and management
-- Cover letter generation
-- Job assessment analysis
-- Support for job listing aggregation websites (linkedin, indeed, ziprecuiter, etc) as well as most corporate career websites.
+- Auto-fill personal information
+- Answer experience-related questions based on your resume
+- Provide compelling answers to open-ended questions
+- Generate custom cover letters
+- AI-powered assessment report
+- Support custom instructions for AI
+- Convenient shortcut keys for one-click Auto Fill
 
 ## Installation
 
