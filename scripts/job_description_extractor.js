@@ -11,7 +11,7 @@ class JobDescriptionExtractor {
     let paragraphs=text.split("\n").map(p=>p.trim());
     //remove any paragraph that has no punctuation and the following paragraph also has no punctuation
     for (let i=0;i<paragraphs.length;i++) {
-      if (!isRegularParagraph(paragraphs[i]) && (i==paragraphs.length-1 || !isRegularParagraph(paragraphs[i+1]))) {
+      if (!this.isRegularParagraph(paragraphs[i]) && (i==paragraphs.length-1 || !this.isRegularParagraph(paragraphs[i+1]))) {
         paragraphs[i]="";
       }
     }
@@ -48,7 +48,7 @@ class JobDescriptionExtractor {
       job_description = window.getSelection().toString().trim();
       //if no text is selected, extract all text and use it if it is not too long.
       if (!job_description) {
-        job_description=extractAllText();
+        job_description=this.extractAllText();
       }
       if (!job_description || job_description.length>10000) {
         alert("We can't auto-detect job description on this website. Please select the job description text and try again.");
