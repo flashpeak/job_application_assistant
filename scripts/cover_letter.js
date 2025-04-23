@@ -11,6 +11,21 @@ class CoverLetter {
       flex-direction: column;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       animation: slideIn 0.3s ease-out;
+      /* Explicitly set text color to prevent inheritance */
+      color: #333;
+      /* Reset other inherited properties */
+      font-size: 16px;
+      line-height: 1.5;
+      text-align: left;
+    }
+
+    /* Ensure all text elements have explicit colors */
+    .dialog h3,
+    .dialog p,
+    .dialog div,
+    .dialog span,
+    .dialog textarea {
+      color: inherit;
     }
 
     @keyframes slideIn {
@@ -34,6 +49,7 @@ class CoverLetter {
     .dialog-header h3 {
       margin: 0;
       font-size: 18px;
+      color: #333;
     }
 
     .close-button {
@@ -42,6 +58,7 @@ class CoverLetter {
       font-size: 20px;
       cursor: pointer;
       padding: 5px;
+      color: #333;
     }
 
     .textarea {
@@ -54,6 +71,7 @@ class CoverLetter {
       resize: vertical;
       font-family: inherit;
       box-sizing: border-box;
+      color: #333;
     }
 
     .button-group {
