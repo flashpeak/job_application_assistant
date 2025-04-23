@@ -12,7 +12,7 @@
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
-      "exclude_matches": ["https://*.icims.com/*","https://*.greenhouse.io/*","https://recruit.hr-on.com/*"],
+      "exclude_matches": ["https://*.icims.com/*","https://*.greenhouse.io/*","https://recruit.hr-on.com/*","https://jobs.ashbyhq.com/*"],
       "js": [
         "scripts/utils.js",
         "scripts/ai_busy_state_man.js",
@@ -32,7 +32,7 @@
       "type": "module"
     },
     {
-      "matches": ["https://*.icims.com/*","https://*.greenhouse.io/*","https://recruit.hr-on.com/*"],
+      "matches": ["https://*.icims.com/*","https://*.greenhouse.io/*","https://recruit.hr-on.com/*","https://jobs.ashbyhq.com/*"],
       "js": [
         "scripts/utils.js",
         "scripts/ai_busy_state_man.js",
